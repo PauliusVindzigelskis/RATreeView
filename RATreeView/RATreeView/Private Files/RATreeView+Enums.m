@@ -92,6 +92,8 @@
       return UITableViewStylePlain;
     case RATreeViewStyleGrouped:
       return UITableViewStyleGrouped;
+    default:
+          return UITableViewStylePlain;
   }
 }
 

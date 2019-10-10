@@ -93,7 +93,7 @@
     case RATreeViewStyleGrouped:
       return UITableViewStyleGrouped;
     default:
-      return RATreeViewStylePlain;
+      return UITableViewStylePlain;
   }
 }
 
@@ -104,7 +104,7 @@
       return RATreeViewStylePlain;
     case UITableViewStyleGrouped:
       return RATreeViewStyleGrouped;
-      default:
+    default:
       return RATreeViewStylePlain;
   }
 }

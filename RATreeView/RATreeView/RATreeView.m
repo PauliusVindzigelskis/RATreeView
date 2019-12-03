@@ -78,7 +78,8 @@
   tableView.dataSource = (id<UITableViewDataSource>)self;
   tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
   tableView.backgroundColor = [UIColor clearColor];
-
+  tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+  
   [self addSubview:tableView];
   [self setTableView:tableView];
 

@@ -102,24 +102,25 @@
   if ([self.delegate respondsToSelector:@selector(treeView:didSelectRowForItem:)]) {
     [self.delegate treeView:self didSelectRowForItem:treeNode.item];
   }
-  
-  if (treeNode.expanded) {
-    if ([self.delegate respondsToSelector:@selector(treeView:shouldCollapaseRowForItem:)]) {
-      if ([self.delegate treeView:self shouldCollapaseRowForItem:treeNode.item]) {
-        [self collapseCellForTreeNode:treeNode informDelegate:YES];
-      }
-    } else {
-      [self collapseCellForTreeNode:treeNode informDelegate:YES];
-    }
-  } else {
-    if ([self.delegate respondsToSelector:@selector(treeView:shouldExpandRowForItem:)]) {
-      if ([self.delegate treeView:self shouldExpandRowForItem:treeNode.item]) {
-        [self expandCellForTreeNode:treeNode informDelegate:YES];
-      }
-    } else {
-      [self expandCellForTreeNode:treeNode informDelegate:YES];
-    }
-  }
+
+// No need expand on did select row
+//   if (treeNode.expanded) {
+//     if ([self.delegate respondsToSelector:@selector(treeView:shouldCollapaseRowForItem:)]) {
+//       if ([self.delegate treeView:self shouldCollapaseRowForItem:treeNode.item]) {
+//         [self collapseCellForTreeNode:treeNode informDelegate:YES];
+//       }
+//     } else {
+//       [self collapseCellForTreeNode:treeNode informDelegate:YES];
+//     }
+//   } else {
+//     if ([self.delegate respondsToSelector:@selector(treeView:shouldExpandRowForItem:)]) {
+//       if ([self.delegate treeView:self shouldExpandRowForItem:treeNode.item]) {
+//         [self expandCellForTreeNode:treeNode informDelegate:YES];
+//       }
+//     } else {
+//       [self expandCellForTreeNode:treeNode informDelegate:YES];
+//     }
+//   }
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath

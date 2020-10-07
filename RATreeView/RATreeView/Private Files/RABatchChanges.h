@@ -32,6 +32,6 @@
 - (void)collapseItemWithBlock:(void(^)(void))update lastIndex:(NSInteger)index;
 - (void)deleteItemWithBlock:(void(^)(void))update lastIndex:(NSInteger)index;
 
-- (void)moveItemWithDeletionBlock:(void (^)(void))deletionUpdate fromLastIndex:(NSInteger)lastIndex additionBlock:(void (^)())additionUpdate toIndex:(NSInteger)index;
+- (void)moveItemWithDeletionBlock:(void (^)(void))deletionUpdate fromLastIndex:(NSInteger)lastIndex additionBlock:(void (^)(void))additionUpdate toIndex:(NSInteger)index;
 
 @end

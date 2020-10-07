@@ -60,8 +60,6 @@
       return RATreeViewCellSeparatorStyleNone;
     case UITableViewCellSeparatorStyleSingleLine:
       return RATreeViewCellSeparatorStyleSingleLine;
-    case UITableViewCellSeparatorStyleSingleLineEtched:
-      return RATreeViewCellSeparatorStyleSingleLineEtched;
     default:
       return RATreeViewCellSeparatorStyleNone;
   }
@@ -74,8 +72,6 @@
       return UITableViewCellSeparatorStyleNone;
     case RATreeViewCellSeparatorStyleSingleLine:
       return UITableViewCellSeparatorStyleSingleLine;
-    case RATreeViewCellSeparatorStyleSingleLineEtched:
-      return UITableViewCellSeparatorStyleSingleLineEtched;
     default:
       return UITableViewCellSeparatorStyleNone;
   }
